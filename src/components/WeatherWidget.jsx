@@ -9,7 +9,9 @@ const WeatherWidget = () => {
   const [submittedCountry, setSubmittedCountry] = useState('');
   const [showErrorMessage, setShowErrorMessage] = useState(false);
   const [isButtonPressed, setIsButtonPressed] = useState(false);
+  const apiKey = import.meta.env.VITE_REACT_APP_API_KEY || process.env.REACT_APP_API_KEY;
 
+  
   useEffect(() => {
     const fetchData = async () => {
       if (submittedCountry.trim() === '') {
@@ -19,7 +21,7 @@ const WeatherWidget = () => {
 
       try {
         const response = await fetch(
-          `http://api.weatherapi.com/v1/current.json?key=2c8e8ed65d8d4d7f99b110534242301&q=${submittedCountry}&aqi=no`
+          `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${submittedCountry}&aqi=no`
         );
 
         const data = await response.json();

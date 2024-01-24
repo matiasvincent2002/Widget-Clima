@@ -1,7 +1,7 @@
 .widget-container{
     width: 400px;
     height: auto;
-    background-color: #ebebeb;
+    background-color: #dde4ff;
     padding: 16px;
     position: relative;
     border-radius: 16px;
@@ -20,6 +20,15 @@
    
 
 }
+.condition{
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
 .no-country{
     display: none;
 }
@@ -27,20 +36,73 @@
     margin: 0px auto;
     font-size:24px;
     width: 50%;
+position: relative;
     
+}
+
+.container-loc-desc{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    padding: 16px;
+    height: 100px;
+    flex-wrap: nowrap;
+}
+.detail{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .form{
     color: #333;
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     height: 30px;
     
 }
+.label{
+    scale: 2;
+    margin: 0px 20px;
+}
+.input{
+    background: none;
+    border:none;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    color: #333;
+}
+.button{
+    border: none;
+    background-color: #ffffff01;
+    scale: 2;
+    margin: 0px 10px;
+    border-radius: 8px;
+    color: #333;
+    transition: 0.3s ;
+}
+.button:hover{
+    background: #152f32;
+    color: #fff;
+}
 
+.weather-icon-container{
+    background: none;
+    width: 200px;
+    height: 50px;
+    position: relative;
 
+}
 /*estilos para las img*/
 .weather-icon{
+   width: 150px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
    
 }
 .temperature{
@@ -49,10 +111,13 @@
     align-items: center;
     margin-top: 20px;
     padding: 16px;
-   
-    background-color: #152f3280;
-    backdrop-filter: blur(5px);
-    font-size: 34px;
-   
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold 700;
 }
-    
+.celcius{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold ;
+    text-align: center;
+}

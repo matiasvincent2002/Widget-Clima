@@ -5,6 +5,7 @@ import WeatherWidget from './components/WeatherWidget';
 function App() {
     return (
         <div id="app">
+        
             <WeatherWidget city="TuCiudad" />
         </div>
     );
